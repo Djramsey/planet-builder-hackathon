@@ -15,16 +15,22 @@
 <!--Space background-->
 <div id='stars'></div>
 
+<h1 id="planetname"> </h1> 
 
 <!--Planet goes here  -->
-<div id="theplanet" onmouseover="PlaySound('mySound')" 
+<div id="planetandrings">
+  <div id="theplanet" onmouseover="PlaySound('mySound')" 
     onmouseout="StopSound('mySound')">
-  <h1 id="planetname"> Planet Name</h1> 
-  <div id="planetrings">  </div>
-  <!--Moon-->  
-  <div class="moon"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+    
+  <div id="rocket-box"></div>
+  
+  <div id="square">
+    <div class="moon"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
+  </div>
+  <!--Moon-->
+  </div>
+  <div id="planetrings"></div>
 </div>
-
 
 
 <!--Input to choose planet options goes here-->
@@ -33,7 +39,7 @@
   <h3>Build Your Planet</h3>
 
   <label>
-    <span class="label-txt">Planet Pixel</span>
+    <span class="label-txt">Planet Size</span>
     <input id="size">
   </label>
 
