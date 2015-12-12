@@ -36,6 +36,7 @@ body {
   vertical-align: middle;
 }
 #planetrings {
+    display: none;
     width: 120%;
     height: 20%;
     vertical-align: middle;
@@ -76,9 +77,12 @@ label {
  color: white;
 }
 
-#build, #moon-add {
+#build, #moon-add, #ring-add {
   padding: 5px;
-  margin: 5px;
+  text-align: center;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-bottom: 5px;
   border-radius: 5px;
   background: rgba(255,0,0,0.5);
   width: 125px;
@@ -86,8 +90,10 @@ label {
 
 #rocket {
   position: relative;
+  text-align: center;
   padding: 5px;
-  margin: 5px;
+  margin-left: auto ;
+  margin-right: auto ;
   border-radius: 5px;
   background: rgba(0,255,0,0.5);
   width: 125px;
@@ -121,7 +127,6 @@ h3 { color: white; }
 #rocket-box{
   display: none;
   position: absolute;
-  border: 1px solid red;
   top: -800px;
   left: 25%;
   bottom: 100%;
