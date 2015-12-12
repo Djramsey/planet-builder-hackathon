@@ -27,14 +27,16 @@ $( '#ring-add' ).click(function() {
   $('#planetrings').toggle()
 });
 
+var score = 0;
+var speed = 5;
+
 $( '#rocket' ).click(function() {
+  speed -=1;
   $('#rocket-box').show()
   $('#rocket-box').slideUp(2000)
   collision($('#rocket-img'), $('.moon'))
+  $('#square').css({'animation':'orbit ' + speed + 's linear infinite'});
 });
-
-var score = 0;
-
 
  function collision($div1, $div2) {
     var x1 = $div1.offset().left;
