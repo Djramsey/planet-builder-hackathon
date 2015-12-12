@@ -153,10 +153,10 @@ h3 { color: white; }
     -webkit-animation-timing-function:linear;
     -webkit-animation-name:orbit;
     -webkit-animation-duration:5s;
-    top: -150px;
-    left: -150px;
-    right: -150px;
-    bottom: -150px;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    bottom: -100px;
 }
 
 .moon {

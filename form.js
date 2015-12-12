@@ -12,7 +12,6 @@ function updatePlanetSize(){
   $('#theplanet').width(size);
   $('#theplanet').height(size);
 }
-
 $( '#build' ).click(function() {
   updatePlanetColor();
   updatePlanetSize();
