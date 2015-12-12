@@ -8,9 +8,10 @@
 <body>
 <!--Space background-->
 <div id='stars'></div>
+
 <!--Planet goes here  -->
 <div id="theplanet">
-
+  <h1 id="planetname"> Planet Name</h1> 
 </div>
 
 
@@ -30,8 +31,12 @@
     <input id="planetcolor" oninput="updatePlanetColor()">
   </label>
   <label>
+    <span class="label-txt">Planet Name</span>
+    <input id="planetnameinput" type="text" oninput="updatePlanetName()">
+  </label>
+  <label>
     <span class="label-txt"></span>
-    <button id="build">Build</button>
+    <div id="build">Build</div>
   </label>
 
 

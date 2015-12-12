@@ -6,20 +6,21 @@ html {
   overflow: hidden;
 }
 
+/* Planet */
+
 body {
   position: relative;
 }
-/* Planet */
 
 #theplanet {
   margin: 0 auto;
-    background: #f10;
+  background: #f10;
   border-radius: 50%;
   width: 200px;
-    height: 200px;
-      position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 200px;
+}
+#planetname {
+ color: white;
 }
 
 
@@ -27,7 +28,7 @@ body {
 #build-planet {
   position: absolute;
   right: 0;
-  top: px;
+  top: 10px;
   width: 400px;
   background-color:rgba(0,0,0,0.3);
   padding: 10px;
@@ -39,6 +40,13 @@ label {
  display: block;
  margin-bottom: 5px;
  color: white;
+}
+
+#build {
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(255,0,0,0.5);
+  display: inline-block;
 }
 
 h3{
