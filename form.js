@@ -31,7 +31,8 @@ $( '#moon-add' ).click(function() {
 });
 
 $( '#rocket' ).click(function() {
-    $('.rocket-box').slideUp('3000')
+    $('#rocket-box').show()
+    $('#rocket-box').slideUp('5s')
 });
 
 

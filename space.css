@@ -36,12 +36,11 @@ body {
   vertical-align: middle;
 }
 #planetrings {
-    width: 180%;
+    width: 120%;
     height: 20%;
-  vertical-align: middle;
-  top:25%;
-  
-   margin-left: -50%;
+    vertical-align: middle;
+    top:35%;
+    margin-left: -20%;
     border-right: 20px solid yellow;
     border-top: 20px solid transparent;
     border-left: 20px solid yellow;
@@ -82,15 +81,16 @@ label {
   margin: 5px;
   border-radius: 5px;
   background: rgba(255,0,0,0.5);
-  display: inline-block;
+  width: 125px;
 }
 
 #rocket {
+  position: relative;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
-  background: rgba(255,0,0,0.5);
-  display: inline-block;
+  background: rgba(0,255,0,0.5);
+  width: 125px;
 }
 
 h3 { color: white; }
@@ -119,9 +119,10 @@ h3 { color: white; }
 }
 
 #rocket-box{
+  display: none;
   position: absolute;
   border: 1px solid red;
-  top: -1000px;
+  top: -800px;
   left: 25%;
   bottom: 100%;
   margin: 0 auto;
