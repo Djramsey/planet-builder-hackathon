@@ -30,6 +30,10 @@ $( '#moon-add' ).click(function() {
     $('.moon').toggle()
 });
 
+$( '#rocket' ).click(function() {
+    $('.rocket-box').slideUp('3000')
+});
+
 
 
 
