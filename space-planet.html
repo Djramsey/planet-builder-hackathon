@@ -4,14 +4,25 @@
   <title>Build A Planet</title>
   <link rel="stylesheet" href="space.css" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<div id='stars'></div>
+<div id='title'></div>
+ 
+  <br>
+  <div id="circle"></div>
 </head>
 <body>
 <!--Space background-->
 <div id='stars'></div>
 
+
 <!--Planet goes here  -->
-<div id="theplanet">
+<div id="theplanet" onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')">
   <h1 id="planetname"> Planet Name</h1> 
+  <div id="planetrings">  </div>
+  <!--Moon-->  
+  <div class="moon"><ul><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>
 </div>
 
 
@@ -22,7 +33,7 @@
   <h3>Build Your Planet</h3>
 
   <label>
-    <span class="label-txt">Planet Size</span>
+    <span class="label-txt">Planet Pixel</span>
     <input id="size">
   </label>
 
@@ -37,16 +48,19 @@
   <label>
     <span class="label-txt"></span>
     <div id="build">Build</div>
+    <div id="moon-add">Moon</div>
   </label>
 
 
 </div>
 
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="form.js"></script>
-
-
-
+<script src = "music.js"></script>
+ <!--Music-->
+<audio id='mySound' src='http://www.tannerhelland.com/dmusic/FromHere.ogg'/>
+  
 </body>
 
 </html>

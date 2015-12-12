@@ -19,3 +19,16 @@ $( '#build' ).click(function() {
   updatePlanetSize();
   updatePlanetName();
 });
+
+$( '#build' ).click(function() {
+  updatePlanetColor();
+  updatePlanetSize();
+  updatePlanetName();
+});
+
+$( '#moon-add' ).click(function() {
+    $('.moon').toggle()
+});
+
+
+
