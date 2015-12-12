@@ -31,11 +31,20 @@ var score = 0;
 var speed = 5;
 
 $( '#rocket' ).click(function() {
-  speed -=1;
+  speed -= 0.5;
   $('#rocket-box').show()
   $('#rocket-box').slideUp(2000)
   collision($('#rocket-img'), $('.moon'))
-  $('#square').css({'animation':'orbit ' + speed + 's linear infinite'});
+  
+  if (speed == 0) {
+    alert('You scored ' + score + ' points!' )
+  }
+  
+  function speedUp(){
+    $('#square').css({'animation':'orbit ' + speed + 's linear infinite'});
+  }
+  
+  setTimeout(speedUp, 2000);
 });
 
  function collision($div1, $div2) {
