@@ -5,6 +5,10 @@ html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 }
+
+body {
+  position: relative;
+}
 /* Planet */
 
 #theplanet {
@@ -13,11 +17,18 @@ html {
   border-radius: 50%;
   width: 200px;
     height: 200px;
+      position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
 /*Build Planet*/
 #build-planet {
+  position: absolute;
+  right: 0;
+  top: px;
+  width: 400px;
   background-color:rgba(0,0,0,0.3);
   padding: 10px;
   border-radius: 10px;
@@ -37,7 +48,8 @@ color: white;
 
 .label-txt{
   display: inline-block;
-  width: 100px;
+  width: 165px;
+  font-size: 13px;
 
 }
 
