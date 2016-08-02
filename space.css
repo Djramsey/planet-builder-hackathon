@@ -22,6 +22,7 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+   
 }
 
 #theplanet {
@@ -34,6 +35,7 @@ body {
   box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
   position: relative;
   vertical-align: middle;
+   
 }
 #planetrings {
     display: none;
